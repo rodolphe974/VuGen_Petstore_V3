@@ -7,6 +7,6 @@ Accept-Language: fr-FR,fr;q=0.8,en-US;q=0.5,en;q=0.3
 Accept: */*
 Connection: Keep-Alive
 Host: jpetstore.cfapps.io
-Cookie: JSESSIONID=EE23AB4E6CAE939281C8D495C7D683D1; __VCAP_ID__=ec6a3f47-db47-41b7-508e-0244
+Cookie: JSESSIONID=FB6206B6078DD0A39C8DE0329DA633C7; __VCAP_ID__=ec6a3f47-db47-41b7-508e-0244
 Content-Length: 42
 

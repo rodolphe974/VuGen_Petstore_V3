@@ -7,7 +7,8 @@
 	web_reg_find("Text=JPetStore Demo", 
 		LAST);
 
-	web_reg_find("Text={randProduct}", 
+	web_reg_find("Fail=NotFound",
+		"Text={randProduct}",
 		LAST);
 
 /*Correlation comment: Automatic rules - Do not change!  

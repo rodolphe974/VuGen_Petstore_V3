@@ -52,7 +52,8 @@ web_set_sockets_option("SSL_VERSION", "TLS1.2");
 
 	web_reg_find("Text=JPetStore Demo", 
 		LAST);
-	web_reg_find("Text=Sign Out", 
+	web_reg_find("SaveCount=login_success",
+		"Text=Sign Out",
 		LAST);
 
 	web_submit_data("login", 

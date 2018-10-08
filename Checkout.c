@@ -10,6 +10,7 @@
 		"ParamName=my_csrf_out",
 		"LB=name=\"_csrf\" value=\"",
 		"RB=\"",
+		"NotFound=warning",
 		SEARCH_FILTERS,
 		"Scope=Body",
 		"RequestUrl=*/create*",

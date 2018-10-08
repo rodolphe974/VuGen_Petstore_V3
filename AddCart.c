@@ -1,12 +1,13 @@
-AddCart()
+﻿AddCart()
 {
 		lr_start_transaction("AddCart");
 	
 		web_reg_find("Text=JPetStore Demo", 
 			LAST);
 	
-		web_reg_find("Text=Shopping Cart", 
-			LAST);
+		web_reg_find("Fail=NotFound",
+		"Text=Shopping Cart",
+		LAST);
 	
 		web_url("Add to Cart",
 			"URL=https://jpetstore.cfapps.io/cart?add&itemId={randItem}",

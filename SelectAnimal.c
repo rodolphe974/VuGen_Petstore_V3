@@ -5,7 +5,8 @@
 	web_reg_find("Text=JPetStore Demo", 
 		LAST);
 
-	web_reg_find("Text={Category}", 
+	web_reg_find("Fail=NotFound",
+		"Text={Category}",
 		LAST);
 	
 	//web_reg_save_param_ex("ParamName=ProductID", "<a href=\"/catalog/products/","\">", LAST);

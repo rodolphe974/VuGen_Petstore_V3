@@ -5,8 +5,9 @@
 		web_reg_find("Text=JPetStore Demo", 
 			LAST);
 	
-		web_reg_find("Text={randItem}", 
-			LAST);
+		web_reg_find("Fail=NotFound",
+		"Text={randItem}",
+		LAST);
 	
 		web_url("ItemID",
 			"URL=https://jpetstore.cfapps.io/catalog/items/{randItem}",
