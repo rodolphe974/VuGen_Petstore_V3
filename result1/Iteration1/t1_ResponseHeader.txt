@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Language: fr-FR
+Content-Type: text/html;charset=UTF-8
+Date: Mon, 08 Oct 2018 08:12:13 GMT
+Expires: 0
+Pragma: no-cache
+Set-Cookie: JSESSIONID=F43423FE7E480FE897C6E0D5BA30B371; Path=/; Secure; HttpOnly
+Set-Cookie: __VCAP_ID__=ec6a3f47-db47-41b7-508e-0244; Path=/; HttpOnly; Secure
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Vcap-Request-Id: ec9e61f4-2b44-4a66-579f-9a9f25d62555
+X-Xss-Protection: 1; mode=block
+transfer-encoding: chunked
+Connection: keep-alive
+

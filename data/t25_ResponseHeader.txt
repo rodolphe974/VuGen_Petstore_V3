@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Cache-Control: no-store
+Content-Language: fr-FR
+Content-Type: text/html;charset=UTF-8
+Date: Fri, 05 Oct 2018 14:14:26 GMT
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Vcap-Request-Id: c2143c2e-8a8b-4cc3-44d8-087253f0f300
+X-Xss-Protection: 1; mode=block
+Content-Length: 8103
+Connection: keep-alive
+
