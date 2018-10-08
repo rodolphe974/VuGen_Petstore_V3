@@ -113,167 +113,114 @@
 
     <section>
 
-        <div id="BackLink">
-            <a href="/catalog">Return to Main Menu</a>
-        </div>
-
         <div id="Catalog">
 
-            <div id="Cart">
+            <form action="/my/orders/create" method="post"><input type="hidden" name="_csrf" value="cec4bce2-8280-4a0a-a22d-92d150768dab"/>
 
-                <h2>Shopping Cart</h2>
+                <table>
+                    <tr>
+                        <th colspan=2>Payment Details</th>
+                    </tr>
+                    <tr>
+                        <td>Card Type:</td>
+                        <td>
+                            <select id="cardType" name="cardType">
+                                <option value="Visa">Visa</option>
+                                <option value="MasterCard">MasterCard</option>
+                                <option value="American Express">American Express</option>
+                            </select>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Card Number:</td>
+                        <td>
+                            <input type="password" id="creditCard" name="creditCard" value=""/> * Use a fake number !
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Expiry Date (MM/YYYY):</td>
+                        <td>
+                            <input id="expiryDate" name="expiryDate" value=""/>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan=2>Billing Address</th>
+                    </tr>
 
-                <form action="/cart" method="post"><input type="hidden" name="_csrf" value="2ca4f06a-8725-4060-814d-eadb22f3e0b4"/>
-                    <table>
-                        <tr>
-                            <th>Item ID</th>
-                            <th>Product ID</th>
-                            <th>Description</th>
-                            <th>In Stock?</th>
-                            <th>Quantity</th>
-                            <th>List Price</th>
-                            <th>Total Cost</th>
-                            <th>&nbsp;</th>
-                        </tr>
+                    <tr>
+                        <td>First name:</td>
+                        <td>
+                            <input id="billToFirstName" name="billToFirstName" value="bilbo"/>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last name:</td>
+                        <td>
+                            <input id="billToLastName" name="billToLastName" value="baggins"/>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address 1:</td>
+                        <td>
+                            <input size="40" id="billAddress1" name="billAddress1" value="5 proudfoot str."/>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address 2:</td>
+                        <td>
+                            <input size="40" id="billAddress2" name="billAddress2" value=""/>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td>
+                            <input size="40" id="billCity" name="billCity" value="Hobbitown"/>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>State:</td>
+                        <td>
+                            <input size="4" id="billState" name="billState" value="TheShire"/>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Zip:</td>
+                        <td>
+                            <input size="10" id="billZip" name="billZip" value="55555"/>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Country:</td>
+                        <td>
+                            <input size="15" id="billCountry" name="billCountry" value="MiddleEarth"/>
+                            
+                        </td>
+                    </tr>
 
-                        
+                    <tr>
+                        <td colspan=2>
+                            <input type="checkbox" id="shippingAddressRequired1" name="shippingAddressRequired" value="true"/><input type="hidden" name="_shippingAddressRequired" value="on"/>
+                            <label for="shippingAddressRequired1">Ship to different address...</label>
+                            
+                        </td>
+                    </tr>
 
-                        <tr>
-                            <td>
-                                <a href="/catalog/items/EST-4">
-                                    <span>EST-4</span>
-                                </a>
-                            </td>
-                            <td>
-                                <span>FI-FW-01</span>
-                            </td>
-                            <td>
-                                <span>Spotted</span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span>Koi</span>
-                            </td>
-                            <td>
-                                <span>true</span>
-                            </td>
-                            <td>
-                                <input type="hidden" value="EST-4"/>
-                                <input id="lines0.quantity" name="lines[0].quantity" value="1"/>
-                                
-                            </td>
-                            <td>
-                                $<span>18.50</span>
-                            </td>
-                            <td>
-                                $<span>18.50</span>
-                            </td>
-                            <td>
-                                <a class="Button" href="/cart?remove&amp;itemId=EST-4">Remove</a>
-                            </td>
-                        </tr>
+                </table>
 
-                        <tr>
-                            <td>
-                                <a href="/catalog/items/EST-5">
-                                    <span>EST-5</span>
-                                </a>
-                            </td>
-                            <td>
-                                <span>FI-FW-01</span>
-                            </td>
-                            <td>
-                                <span>Spotless</span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span>Koi</span>
-                            </td>
-                            <td>
-                                <span>true</span>
-                            </td>
-                            <td>
-                                <input type="hidden" value="EST-5"/>
-                                <input id="lines1.quantity" name="lines[1].quantity" value="1"/>
-                                
-                            </td>
-                            <td>
-                                $<span>18.50</span>
-                            </td>
-                            <td>
-                                $<span>18.50</span>
-                            </td>
-                            <td>
-                                <a class="Button" href="/cart?remove&amp;itemId=EST-5">Remove</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="7">
-                                Sub Total:
-                                $<span>37.00</span>
-                                <input type="submit" name="update" value="Update Cart"/>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </table>
+                <input type="submit" name="continue" value="Continue"/>
 
-                </form>
-
-                <a href="/my/orders/create?form" class="Button">
-                    Proceed to Checkout
-                </a>
-
-            </div>
-
-            <div id="MyList">
-                <div>
-                    <p>Pet Favorites <br/>
-                        Shop for more of your favorite pets here.</p>
-                    <ul>
-                        <li>
-                            <a href="/catalog/products/K9-BD-01">
-                                <span>Bulldog</span>
-                                (<span>K9-BD-01</span>)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/catalog/products/K9-PO-02">
-                                <span>Poodle</span>
-                                (<span>K9-PO-02</span>)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/catalog/products/K9-DL-01">
-                                <span>Dalmation</span>
-                                (<span>K9-DL-01</span>)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/catalog/products/K9-RT-01">
-                                <span>Golden Retriever</span>
-                                (<span>K9-RT-01</span>)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/catalog/products/K9-RT-02">
-                                <span>Labrador Retriever</span>
-                                (<span>K9-RT-02</span>)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/catalog/products/K9-CW-01">
-                                <span>Chihuahua</span>
-                                (<span>K9-CW-01</span>)
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="Separator">&nbsp;</div>
+            </form>
         </div>
-
 
     </section>
 </div>

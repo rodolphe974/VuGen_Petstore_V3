@@ -6,120 +6,94 @@
                 "stepId": "STEP4",
                 "stepName": "Url: Animal",
                 "infFile": "t6.inf",
-                "time": 1538990932162
+                "time": 1538991598830
             },
             {
                 "stepId": "STEP5",
                 "stepName": "Url: ProductID",
                 "infFile": "t8.inf",
-                "time": 1538990933268
+                "time": 1538991599347
             },
             {
                 "stepId": "STEP6",
                 "stepName": "Url: ItemID",
                 "infFile": "t9.inf",
-                "time": 1538990933879
+                "time": 1538991599819
             },
             {
                 "stepId": "STEP7",
                 "stepName": "Url: Add to Cart",
                 "infFile": "t10.inf",
-                "time": 1538990935166
+                "time": 1538991600427
             },
             {
                 "stepId": "STEP8",
-                "stepName": "Url: ItemID",
-                "infFile": "t11.inf",
-                "time": 1538990935919
+                "stepName": "Url: Proceed to Checkout",
+                "infFile": "t12.inf",
+                "time": 1538991600954
             },
             {
                 "stepId": "STEP9",
-                "stepName": "Url: Add to Cart",
-                "infFile": "t12.inf",
-                "time": 1538990936934
+                "stepName": "Submit Data: create",
+                "infFile": "t13.inf",
+                "time": 1538991601501
             },
             {
                 "stepId": "STEP10",
-                "stepName": "Url: Proceed to Checkout",
-                "infFile": "t14.inf",
-                "time": 1538990937884
-            },
-            {
-                "stepId": "STEP11",
-                "stepName": "Submit Data: create",
-                "infFile": "t15.inf",
-                "time": 1538990939043
-            },
-            {
-                "stepId": "STEP12",
                 "stepName": "Submit Data: create_2",
-                "infFile": "t16.inf",
-                "time": 1538990941650
+                "infFile": "t14.inf",
+                "time": 1538991602233
             }
         ],
         "transactions": [
             {
                 "transactionName": "ClickAnimal",
-                "rawStartTime": 1538990931335,
-                "rawEndTime": 1538990932162,
+                "rawStartTime": 1538991598339,
+                "rawEndTime": 1538991598831,
                 "thinkTime": 0.0,
-                "wastedTime": 0.06227755546569824
+                "wastedTime": 0.05694127082824707
             },
             {
                 "transactionName": "ClickProduct",
-                "rawStartTime": 1538990932165,
-                "rawEndTime": 1538990933268,
+                "rawStartTime": 1538991598834,
+                "rawEndTime": 1538991599347,
                 "thinkTime": 0.0,
-                "wastedTime": 0.059038400650024417
+                "wastedTime": 0.07643699645996094
             },
             {
                 "transactionName": "ClickItem",
-                "rawStartTime": 1538990933275,
-                "rawEndTime": 1538990933879,
+                "rawStartTime": 1538991599354,
+                "rawEndTime": 1538991599819,
                 "thinkTime": 0.0,
-                "wastedTime": 0.019184112548828126
+                "wastedTime": 0.022944211959838868
             },
             {
                 "transactionName": "AddCart",
-                "rawStartTime": 1538990933880,
-                "rawEndTime": 1538990935166,
+                "rawStartTime": 1538991599821,
+                "rawEndTime": 1538991600428,
                 "thinkTime": 0.0,
-                "wastedTime": 0.05843234062194824
-            },
-            {
-                "transactionName": "ClickItem",
-                "rawStartTime": 1538990935173,
-                "rawEndTime": 1538990935920,
-                "thinkTime": 0.0,
-                "wastedTime": 0.02199101448059082
-            },
-            {
-                "transactionName": "AddCart",
-                "rawStartTime": 1538990935922,
-                "rawEndTime": 1538990936934,
-                "thinkTime": 0.0,
-                "wastedTime": 0.054128170013427737
+                "wastedTime": 0.06093430519104004
             },
             {
                 "transactionName": "ClickCheckOut",
-                "rawStartTime": 1538990936939,
-                "rawEndTime": 1538990937885,
+                "rawStartTime": 1538991600433,
+                "rawEndTime": 1538991600955,
                 "thinkTime": 0.0,
-                "wastedTime": 0.054628849029541019
+                "wastedTime": 0.06100606918334961
             },
             {
                 "transactionName": "FillInPaiement",
-                "rawStartTime": 1538990937885,
-                "rawEndTime": 1538990939043,
+                "rawStartTime": 1538991600955,
+                "rawEndTime": 1538991601502,
                 "thinkTime": 0.0,
-                "wastedTime": 0.06747913360595703
+                "wastedTime": 0.06410741806030274
             },
             {
                 "transactionName": "Submit",
-                "rawStartTime": 1538990939043,
-                "rawEndTime": 1538990941650,
+                "rawStartTime": 1538991601502,
+                "rawEndTime": 1538991602233,
                 "thinkTime": 0.0,
-                "wastedTime": 0.07646059989929199
+                "wastedTime": 0.05571341514587402
             }
         ]
     }

@@ -109,9 +109,7 @@
 
 <div id="Content">
 
-    <ul class="messages">
-        <li class="success">Thank you, your order has been submitted.</li>
-    </ul>
+    
 
     <section>
 
@@ -123,28 +121,15 @@
 
         <div id="Catalog">
 
+            <span id="confirmMessage">Please confirm the information below and then press submit...</span>
+
             <table>
                 <tr>
                     <th align="center" colspan="2">
-                        Order #<span id="orderId">1028</span>
-                        <span>2018/10/08 09:29:00</span>
+                        <font size="4"><b>Order</b></font>
                     </th>
                 </tr>
-                <tr>
-                    <th colspan="2">Payment Details</th>
-                </tr>
-                <tr>
-                    <td>Card Type:</td>
-                    <td><span>Visa</span></td>
-                </tr>
-                <tr>
-                    <td>Card Number:</td>
-                    <td><span>5555</span> * Fake number!</td>
-                </tr>
-                <tr>
-                    <td>Expiry Date (MM/YYYY):</td>
-                    <td><span>03/2020</span></td>
-                </tr>
+
                 <tr>
                     <th colspan="2">Billing Address</th>
                 </tr>
@@ -215,89 +200,12 @@
                     <td>Country:</td>
                     <td><span>MiddleEarth</span></td>
                 </tr>
-                <tr>
-                    <td>Courier:</td>
-                    <td><span>UPS</span></td>
-                </tr>
-                <tr>
-                    <td colspan="2">Status: <span>P</span></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <table>
-                            <tr>
-                                <th>Item ID</th>
-                                <th>Description</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th>Total Cost</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/catalog/items/EST-4">
-                                        <span>EST-4</span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <div>
-                                        <span>Spotted</span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span>Koi</span>
-                                    </div>
-                                    
-                                </td>
-                                <td>
-                                    <span>1</span>
-                                </td>
-                                <td>
-                                    $<span>18.50</span>
-                                </td>
-                                <td>
-                                    $<span>18.50</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/catalog/items/EST-5">
-                                        <span>EST-5</span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <div>
-                                        <span>Spotless</span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span>Koi</span>
-                                    </div>
-                                    
-                                </td>
-                                <td>
-                                    <span>1</span>
-                                </td>
-                                <td>
-                                    $<span>18.50</span>
-                                </td>
-                                <td>
-                                    $<span>18.50</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th colspan="5">
-                                    Total:
-                                    $<span>37.00</span>
-                                </th>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
 
             </table>
 
+            <form action="/my/orders/create" method="post"><input type="hidden" name="_csrf" value="cec4bce2-8280-4a0a-a22d-92d150768dab"/>
+                <input id="order" type="submit" value="Submit"/>
+            </form>
         </div>
 
     </section>

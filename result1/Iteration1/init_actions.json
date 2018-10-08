@@ -6,35 +6,35 @@
                 "stepId": "STEP1",
                 "stepName": "Url: catalog",
                 "infFile": "t1.inf",
-                "time": 1538990913977
+                "time": 1538991596172
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Url: Sign In",
                 "infFile": "t3.inf",
-                "time": 1538990914929
+                "time": 1538991596661
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Submit Data: login",
                 "infFile": "t4.inf",
-                "time": 1538990931318
+                "time": 1538991598323
             }
         ],
         "transactions": [
             {
                 "transactionName": "ClickSignIn",
-                "rawStartTime": 1538990913977,
-                "rawEndTime": 1538990914929,
+                "rawStartTime": 1538991596173,
+                "rawEndTime": 1538991596662,
                 "thinkTime": 0.0,
-                "wastedTime": 0.05443716049194336
+                "wastedTime": 0.060678720474243167
             },
             {
                 "transactionName": "ManageLogin",
-                "rawStartTime": 1538990914930,
-                "rawEndTime": 1538990931318,
+                "rawStartTime": 1538991596662,
+                "rawEndTime": 1538991598324,
                 "thinkTime": 0.0,
-                "wastedTime": 0.02815103530883789
+                "wastedTime": 0.028440475463867189
             }
         ]
     }
